@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="BitC3R0 (Red México Soft)" />
+<meta name="copyright" content="© Red México Soft (www.redmexico.com.mx)" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+
+<body>
+<!--
+	Tema diseñado por Red México Soft
+	Por favor no remuevas estas líneas
+	Descarga mas temas en: www.xoops-mexico.net
+	Hosting y Servicios:   www.redmexico.com.mx
+	Diseños personalizado para tu sitio
+	Desarrollo de Módulos
+-->
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="18">&nbsp;</td>
+    <td width="832"><table width="832"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="150"><a href="/"><img src="<{$xoops_imageurl}>logo.png" width="150" height="57" border="0"></a></td>
+        <td width="672" align="right" valign="bottom"><table width="300" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" class="navtop"><a href="<{ $xoops_url }>">Inicio</a></td>
+            <td width="5"><img src="<{$xoops_imageurl}>text-sep.gif" width="5" height="20"></td>
+            <td align="center" class="navtop"><a href="<{ $xoops_url }>/modules/rmdp/">Descargas</a></td>
+            <td width="5"><img src="<{$xoops_imageurl}>text-sep.gif" width="5" height="20"></td>
+            <td align="center" class="navtop"><a href="<{ $xoops_url }>/modules/newbb/">Foros</a></td>
+            <td width="5"><img src="<{$xoops_imageurl}>text-sep.gif" width="5" height="20"></td>
+            <td align="center" class="navtop"><a href="<{ $xoops_url }>/modules/xoopsfaq/">FAQ</a></td>
+            <td width="5"><img src="<{$xoops_imageurl}>text-sep.gif" width="5" height="20"></td>
+            <td align="center" class="navtop"><a href="<{$xoops_url}>/modules/mylinks/">Enlaces</a></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td width="18" height="16"><img src="<{$xoops_imageurl}>yellow-top.gif" width="18" height="16"></td>
+    <td width="832" class="maintop"></td>
+  </tr>
+  <tr>
+    <td width="18" rowspan="2" class="leftborder">&nbsp;</td>
+    <td width="832" align="center" class="main">
+	<table width="812" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+  		<form action="<{$xoops_url}>/search.php" method="post">
+        <td width="300" align="center" class="greentop">
+			<img src="<{$xoops_imageurl}>search.gif" width="115" height="26"><br>
+			<input size="15" type="text" name="query" /><input type="hidden" name="action" value="results" /> <input name="sbt" class="formButton" type="submit" value="Buscar" />
+		</td>
+		</form>
+		<td width="5">&nbsp;</td>
+        <td width="507" align="center" class="banners"><{$xoops_banner}></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td width="832" class="main"><br>
+      <table width="822" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="150" class="blockleft" valign="top">
+		  <{foreach item=block from=$xoops_lblocks}>
+       		<{include file="rmhome/theme_blockleft.html"}>
+    	  <{/foreach}>
+		 </td>
+        <td width="532" valign="top" class="content"><{$xoops_contents}><br />
+        	<br />
+        	<table width="490" border="0" cellspacing="0" cellpadding="0">
+            	<tr>
+            		<td width="245" valign="top">
+					<{foreach item=block from=$xoops_clblocks}>
+                		<{include file="rmhome/theme_blockcenter_l.html"}>
+                		<br />
+              		<{/foreach}>					</td>
+            		<td width="245" valign="top">
+					<{foreach item=block from=$xoops_crblocks}>
+                		<{include file="rmhome/theme_blockcenter_l.html"}>
+                		<br />
+              		<{/foreach}>					</td>
+            		</tr>
+            	</table><br /><br />
+				<{foreach item=block from=$xoops_ccblocks}>
+			      <{include file="rmhome/theme_blockcenter_c.html"}>
+			      <br />
+			    <{/foreach}></td>
+        <td width="150" valign="top" class="blockright">
+		<{foreach item=block from=$xoops_rblocks}>
+       		<{include file="rmhome/theme_blockleft.html"}>
+    	<{/foreach}></td>
+      </tr>
+      </table>    <p>&nbsp;</p>
+    </td></tr>
+  <tr>
+    <td class="leftborder">&nbsp;</td>
+    <td width="832" align="right"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="5" height="37" class="bottom"><img src="<{$xoops_imageurl}>bottom-left.gif" width="5" height="37"></td>
+        <td height="37" align="right" class="bottom">
+		<!-- 
+			IMPORTANTE: No remover las siguiente lineas
+		-->
+		Tema por <a href="http://www.redmexico.com.mx">Red México Soft</a>. &copy; Red México Soft. </td>
+        <td width="18" height="37" class="bottom"><img src="<{$xoops_imageurl}>bottom-right.gif" width="18" height="37"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="832" height="30" align="right" class="footer">Powered by XOOPS</td>
+  </tr>
+</table>
+</body>
+</html>
